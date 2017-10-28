@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9D2165BCC74A7C51175B12C /* Pods_Anish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E3789953EF8AA7B18221A3 /* Pods_Anish.framework */; };
+		C41BE6DE1FA47F3100ABBD04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41BE6DD1FA47F3100ABBD04 /* GoogleService-Info.plist */; };
 		C459D7C91FA3A51200F21B82 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C459D7C81FA3A51200F21B82 /* AnimalsViewController.swift */; };
 		C4667C131FA358FA007C2A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4667C121FA358FA007C2A75 /* AppDelegate.swift */; };
 		C4667C151FA358FA007C2A75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4667C141FA358FA007C2A75 /* LoginViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76E3789953EF8AA7B18221A3 /* Pods_Anish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA20BE19E6F5F2760102C8CF /* Pods-Anish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anish/Pods-Anish.release.xcconfig"; sourceTree = "<group>"; };
+		AB108F4EA96725DB7AE27A37 /* Pods-Anish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anish/Pods-Anish.debug.xcconfig"; sourceTree = "<group>"; };
+		C41BE6DD1FA47F3100ABBD04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C459D7C81FA3A51200F21B82 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		C4667C0F1FA358FA007C2A75 /* Anish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4667C121FA358FA007C2A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D2165BCC74A7C51175B12C /* Pods_Anish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206D3AD750281696793F349D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB108F4EA96725DB7AE27A37 /* Pods-Anish.debug.xcconfig */,
+				AA20BE19E6F5F2760102C8CF /* Pods-Anish.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		466F0D947305A8FAF17C1500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76E3789953EF8AA7B18221A3 /* Pods_Anish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C459D7CA1FA3A5AB00F21B82 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +86,8 @@
 			children = (
 				C4667C111FA358FA007C2A75 /* Anish */,
 				C4667C101FA358FA007C2A75 /* Products */,
+				206D3AD750281696793F349D /* Pods */,
+				466F0D947305A8FAF17C1500 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +105,7 @@
 				C459D7CB1FA3A5C800F21B82 /* Controllers */,
 				C459D7CA1FA3A5AB00F21B82 /* SupportingFiles */,
 				C4667C1E1FA358FA007C2A75 /* Info.plist */,
+				C41BE6DD1FA47F3100ABBD04 /* GoogleService-Info.plist */,
 			);
 			path = Anish;
 			sourceTree = "<group>";
@@ -90,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4667C211FA358FA007C2A75 /* Build configuration list for PBXNativeTarget "Anish" */;
 			buildPhases = (
+				5F0DAF719E262997E4B9824B /* [CP] Check Pods Manifest.lock */,
 				C4667C0B1FA358FA007C2A75 /* Sources */,
 				C4667C0C1FA358FA007C2A75 /* Frameworks */,
 				C4667C0D1FA358FA007C2A75 /* Resources */,
+				04F2CF25C8DC14B4A490BFF4 /* [CP] Embed Pods Frameworks */,
+				4CF371A872B0D1CF10C82078 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +173,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4667C1D1FA358FA007C2A75 /* LaunchScreen.storyboard in Resources */,
+				C41BE6DE1FA47F3100ABBD04 /* GoogleService-Info.plist in Resources */,
 				C4667C1A1FA358FA007C2A75 /* Assets.xcassets in Resources */,
 				C4667C181FA358FA007C2A75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04F2CF25C8DC14B4A490BFF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anish/Pods-Anish-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anish/Pods-Anish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF371A872B0D1CF10C82078 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anish/Pods-Anish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F0DAF719E262997E4B9824B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4667C0B1FA358FA007C2A75 /* Sources */ = {
@@ -292,13 +383,14 @@
 		};
 		C4667C221FA358FA007C2A75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB108F4EA96725DB7AE27A37 /* Pods-Anish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV8H4J68BF;
 				INFOPLIST_FILE = Anish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bench.Anish;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bench.Anish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,13 +399,14 @@
 		};
 		C4667C231FA358FA007C2A75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA20BE19E6F5F2760102C8CF /* Pods-Anish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV8H4J68BF;
 				INFOPLIST_FILE = Anish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bench.Anish;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bench.Anish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
